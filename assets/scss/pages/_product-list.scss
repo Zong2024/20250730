@@ -1,0 +1,42 @@
+.product-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+}
+.product-col-6{
+    padding: 4px;
+    width: calc(100% / 12 * 6);
+}
+
+@media (max-width:767px){
+    .product-row{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        
+    }
+    .product-col-6{
+        min-width: 375px;
+        
+    }
+    .bi{
+        width: 48px;
+    }
+}
+@media(max-width:767px){
+    .like-card{
+        &-row{
+            margin-left: -8px;
+            margin-right: -8px;
+   
+        }
+        &-col{
+            min-width: 300px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+}
+.card-sm img{
+    width: 64px;
+    display: flex;
+}

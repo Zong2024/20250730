@@ -1,0 +1,34 @@
+.btn{
+    font-family: "Noto Sans TC", sans-serif;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    &:not(:disabled):hover{
+        background-color:$primary-300;
+        color:$primary-500
+    }
+}
+.btn-dark{
+    background-color: $neutral-900;
+    color:$neutral-0;
+    &:not(:disabled):hover{
+        background-color:$neutral-700;
+        color:$neutral-0
+    }
+}
+.btn-primary{
+    background-color: $primary-300;
+}
+
+.btn-outlined{
+    border: 1px solid $neutral-300;
+    &:not(:disabled):hover{
+        background-color: $neutral-900;
+        color: $neutral-0;
+    }
+}
